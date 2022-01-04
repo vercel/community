@@ -16,4 +16,4 @@ Our platform enables frontend teams to do their best work.
 
 ## Community Discussions
 
-The Vercel Community Discussions enables developers to ask questions to the community or make suggestions to the team. Before you jump in, let's make sure you're in the right place. Please [check out the welcome guide](https://github.com/vercel/community/discussions/1) and consult our [support terms](https://vercel.com/legal/support-terms).
+The Vercel Community Discussions enables developers to ask questions to the community or make suggestions to the team. Before you jump in, let's make sure you're in the right place. Please [check out the welcome guide](https://github.com/vercel/community/discussions/1), [code of conduct](https://github.com/vercel/community/blob/main/.github/CODE_OF_CONDUCT.md) and consult our [support terms](https://vercel.com/legal/support-terms).
