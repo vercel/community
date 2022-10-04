@@ -6,13 +6,13 @@
   <p align="center">Develop. Preview. Ship.</p>
 </p>
 
-[![Join Vercel Community Discussions](https://badgen.net/badge/join/vercel%20community%20discussions/black?icon=github)](https://github.com/vercel/community/discussions)
-
 ## About
 
-Vercel combines the best developer experience with an obsessive focus on end-user performance.
+Vercel is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.
 
-Our platform enables frontend teams to do their best work.
+We enable teams to iterate quickly and develop, preview, and ship delightful user experiences. Vercel has zero-configuration support for 35+ frontend frameworks and integrates with your headless content, commerce, or database of choice.
+
+[Start the tutorial](https://vercel.com/docs/concepts/get-started) or [deploy a template](https://vercel.com/docs#quickstart) in minutes.
 
 ## Community Discussions
 
