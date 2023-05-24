@@ -1,0 +1,13 @@
+body:
+- type: input
+  attributes:
+    label: Page to Investigate
+    description: Share a link to page where you found a problem.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Steps to Reproduce
+    description: Let us know how we can replicate the problem. Feel free to include error messages, screenshots, or any other detail needed to help us see exactly what is happening.
+  validations:
+    required: true
