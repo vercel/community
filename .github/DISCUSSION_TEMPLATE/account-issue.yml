@@ -1,0 +1,10 @@
+body:
+- type: markdown
+  attributes: 
+   value: |
+     Due to the sensitive nature of personal data, account issues cannot be safely handled in this public forum. For issues with login, blocked accounts, or billing problems, please go to our [Vercel Support contact guide](https://vercel.com/guides/how-to-get-vercel-support).
+- type: textarea
+  attributes:
+    label: Question
+  validations:
+    required: true
