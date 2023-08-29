@@ -2,7 +2,11 @@ body:
 - type: markdown
   attributes: 
    value: |
-     Due to the sensitive nature of personal data, account issues cannot be safely handled in this public forum. For issues with login, blocked accounts, or billing problems, please go to our [Vercel Support contact guide](https://vercel.com/guides/how-to-get-vercel-support).
+     Due to the sensitive nature of personal data, account issues cannot be safely handled in this public forum.
+     
+     For login issues or billing problems, please go to our [Vercel Support contact guide](https://vercel.com/guides/how-to-get-vercel-support).
+
+     If your account was blocked, please visit the following guide for more information: [Why has my account or deployment been paused?](https://vercel.com/guides/why-is-my-account-deployment-blocked)
 - type: textarea
   attributes:
     label: Question
