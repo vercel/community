@@ -1,31 +1,30 @@
-name: Close Stale Discussions
+name: New Discussion Auto-lock
 
-on:
-  schedule:
-    - cron: '0 0 * * *' # Runs every day at midnight UTC
-  workflow_dispatch:
-    inputs:
-      days-before-stale:
-        description: 'Number of days before a discussion is considered stale.'
-        default: '90'
-        required: true
-        type: string
+on: 
+  discussion: 
+    types: [locked]
 
 jobs:
-  close-stale-discussions:
+  lock_discussion:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Run action
-        id: autoclose
-        uses: steffen-karlsson/stalesweeper@v1.1.1
-        with:
-          message: '' # Close without comment
-          days-before-close: ${{ inputs.days-before-stale }}
-          close-unanswered: true
-          close-reason: 'OUTDATED'
-          verbose: true
-      - name: Show Output
-        run: |
-          echo '${{ steps.autoclose.outputs.stale-discussions }}' | jq -r '"Closed \(length) stale discussions: "'
-          echo '${{ steps.autoclose.outputs.stale-discussions }}' | jq -r '"- https://github.com/vercel/community/discussions/\(.[].number)"'
+      - run: |
+          lockSucceeded="$(gh api graphql -F discussionId=$DISCUSSION_ID -f query=' 
+          mutation lock($discussionId:ID!) {
+            lockLockable(input: {lockableId:$discussionId}) {
+              actor {
+                login
+              }
+              lockedRecord {
+                activeLockReason
+                locked
+              }
+            }
+          }
+          ' --jq '.data.lockLockable.lockedRecord.locked')"
+
+          echo "LOCKED =" $lockSucceeded
+          echo '${{ github.event.discussion.number }}' | jq -r '"https://github.com/vercel/community/discussions/\(.)"'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISCUSSION_ID: ${{ github.event.discussion.node_id }}
