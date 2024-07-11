@@ -2,15 +2,22 @@ name: New Discussion Auto-lock
 
 on: 
   discussion: 
-    types: [locked]
+    types: [created]
 
 jobs:
   lock_discussion:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - name: Close and lock discussion
+        run: |
           lockSucceeded="$(gh api graphql -F discussionId=$DISCUSSION_ID -f query=' 
           mutation lock($discussionId:ID!) {
+            closeDiscussion(input: {discussionId:$discussionId, reason: OUTDATED}) {
+              discussion {
+                url
+                stateReason
+              }
+            } 
             lockLockable(input: {lockableId:$discussionId}) {
               actor {
                 login
