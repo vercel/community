@@ -1,0 +1,31 @@
+name: Close Stale Discussions
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight UTC
+  workflow_dispatch:
+    inputs:
+      days-before-stale:
+        description: 'Number of days before a discussion is considered stale.'
+        default: '90'
+        required: true
+        type: string
+
+jobs:
+  close-stale-discussions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run action
+        id: autoclose
+        uses: steffen-karlsson/stalesweeper@v1.1.1
+        with:
+          message: '' # Close without comment
+          days-before-close: ${{ inputs.days-before-stale }}
+          close-unanswered: true
+          close-reason: 'OUTDATED'
+          verbose: true
+      - name: Show Output
+        run: |
+          echo '${{ steps.autoclose.outputs.stale-discussions }}' | jq -r '"Closed \(length) stale discussions: "'
+          echo '${{ steps.autoclose.outputs.stale-discussions }}' | jq -r '"- https://github.com/vercel/community/discussions/\(.[].number)"'
