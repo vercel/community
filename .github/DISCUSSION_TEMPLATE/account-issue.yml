@@ -4,13 +4,14 @@ body:
    value: |
      Due to the sensitive nature of personal data, account issues cannot be safely handled in this public forum.
      
-     For login issues or billing problems, please go to our [Vercel Support contact guide](https://vercel.com/guides/how-to-get-vercel-support).
+     For login issues or billing problems, please go to our [Vercel Support contact guide](https://vercel.com/guides/how-to-get-vercel-support) to get the latest contact info.
 
      If your account, signup, or deployment was blocked, please visit the following guides for more information: 
      - [Why has my account or deployment been paused?](https://vercel.com/guides/why-is-my-account-deployment-blocked)
      - [Why am I unable to login or signup to the Vercel platform?](https://vercel.com/guides/why-can-i-not-signup)
-- type: textarea
-  attributes:
-    label: Question
-  validations:
-    required: true
+- type: checkboxes
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I acknowledge that this discussion will be automatically closed.
+          required: true  

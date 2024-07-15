@@ -1,4 +1,10 @@
 body:
+- type: markdown
+    attributes:
+      value: |
+        # Please use the new forum
+        > [!IMPORTANT]  
+        > **New Discussions in this repo are no longer actively monitored and will be automatically closed. Please go to the new [Vercel Community](https://vercel.community).**
 - type: textarea
   attributes:
     label: Summary
