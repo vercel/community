@@ -1,25 +1,25 @@
 body:
-- type: markdown
+  - type: markdown
     attributes:
       value: |
         # Please go to Vercel Community
         > [!IMPORTANT]  
         > **New Discussions in this repo are no longer actively monitored and will be automatically closed. Please go to the new [Vercel Community](https://vercel.community).**
-- type: textarea
-  attributes:
-    label: Summary
-    description: Give a quick description of the problem.
-  validations:
-    required: true
-- type: input
-  attributes:
-    label: Example
-    description: Share a link to a minimal reproduction or demo deployment to show what is going wrong.
-  validations:
-    required: false
-- type: textarea
-  attributes:
-    label: Steps to Reproduce
-    description: Let us know how we can replicate the problem. Feel free to include code, error messages, screenshots, or any other detail needed to help us see exactly what is happening.
-  validations:
-    required: true
+  - type: textarea
+    attributes:
+      label: Summary
+      description: Give a quick description of the problem.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Example
+      description: Share a link to a minimal reproduction or demo deployment to show what is going wrong.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: Let us know how we can replicate the problem. Feel free to include code, error messages, screenshots, or any other detail needed to help us see exactly what is happening.
+    validations:
+      required: true
