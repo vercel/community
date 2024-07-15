@@ -4,7 +4,7 @@ body:
    value: |
      This category is intended for posts seeking general advice and more information about Vercel features. It is **not** meant for code assistance, platform errors, or related topics.
 
-     NOTE: If you post in this category seeking project help or reporting errors, it may take longer to be noticed and get a response. For these topics, please use [Help](https://github.com/orgs/vercel/discussions/categories/help) or [Bug Report](https://github.com/orgs/vercel/discussions/categories/bug-report).
+     NOTE: If you post in this category seeking project help or reporting errors, it may take longer to be noticed and get a response. For these topics, please use [Help](https://vercel.community/c/help/) or [Bug Report](https://github.com/orgs/vercel/discussions/categories/bug-report).
 - type: textarea
   attributes:
     label: Question
