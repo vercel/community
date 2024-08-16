@@ -2,6 +2,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        # Please use the appropriate private channel
+
         Due to the sensitive nature of personal data, account issues cannot be safely handled in this public forum.
 
         For login issues or billing problems, please go to our [Vercel Support contact guide](https://vercel.com/guides/how-to-get-vercel-support) to get the latest contact info.
@@ -13,5 +15,5 @@ body:
     attributes:
       label: Acknowledgement
       options:
-        - label: I acknowledge that this discussion will be automatically closed.
+        - label: I acknowledge that account issues cannot safely be solved in public and this discussion will be automatically closed.
           required: true

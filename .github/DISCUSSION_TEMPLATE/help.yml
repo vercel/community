@@ -4,22 +4,16 @@ body:
       value: |
         # Please go to Vercel Community
         > [!IMPORTANT]  
-        > **New Discussions in this repo are no longer actively monitored and will be automatically closed. Please go to the new [Vercel Community](https://vercel.community).**
+        > **New Discussions in this repo are no longer actively monitored and will be automatically closed.** 
+        > **Please join us in the new [Vercel Community](https://vercel.community).**
+  - type: checkboxes
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I acknowledge that this discussion will be automatically closed.
+          required: true
   - type: textarea
     attributes:
-      label: Summary
-      description: Give a quick description of the problem.
-    validations:
-      required: true
-  - type: input
-    attributes:
-      label: Example
-      description: Share a link to a minimal reproduction or demo deployment to show what is going wrong.
-    validations:
-      required: false
-  - type: textarea
-    attributes:
-      label: Steps to Reproduce
-      description: Let us know how we can replicate the problem. Feel free to include code, error messages, screenshots, or any other detail needed to help us see exactly what is happening.
+      label: Question
     validations:
       required: true

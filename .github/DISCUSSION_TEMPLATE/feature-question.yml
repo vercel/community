@@ -4,7 +4,14 @@ body:
       value: |
         # Please go to Vercel Community
         > [!IMPORTANT]  
-        > **New Discussions in this repo are no longer actively monitored and will be automatically closed. Please go to the new [Vercel Community](https://vercel.community).**
+        > **New Discussions in this repo are no longer actively monitored and will be automatically closed.** 
+        > **Please join us in the new [Vercel Community](https://vercel.community).**
+  - type: checkboxes
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I acknowledge that this discussion will be automatically closed.
+          required: true
   - type: textarea
     attributes:
       label: Question
