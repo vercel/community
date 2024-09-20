@@ -4,7 +4,7 @@ name: Auto Lock Stale Discussions
 
 on: 
  schedule:
-    - cron: '0 0 * * *' # Runs every day at midnight UTC
+    - cron: '45 * * * *'
  workflow_dispatch:
 
 jobs:
