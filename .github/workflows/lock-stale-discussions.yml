@@ -5,6 +5,7 @@ name: Auto Lock Stale Discussions
 on: 
  schedule:
     - cron: '0 0 * * *' # Runs every day at midnight UTC
+ workflow_dispatch:
 
 jobs:
   close_discussion:
@@ -13,7 +14,7 @@ jobs:
       - name: get-stale-discussions
         id: get-stale-discussions
         run: |
-          staleDiscussionsQuery="repo:amyegan/community-test updated:<$(date -d "-30days" -I) sort:updated-asc is:unlocked"
+          staleDiscussionsQuery="repo:vercel/community updated:<$(date -d "-30days" -I) sort:updated-asc is:unlocked"
 
           discussions=$(gh api graphql -F searchQuery="$staleDiscussionsQuery" -f query='
            query oldDiscussions($searchQuery: String!) {
