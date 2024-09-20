@@ -49,6 +49,11 @@ jobs:
                   locked
                 }
               }
+              addDiscussionComment(input: {discussionId: $discussionId, body: "This discussion was automatically locked because the community moved to a new site. Please join us at [vercel.community](https://vercel.community)"}) {
+                comment {
+                  body
+                }
+              }
             }
            ' --jq '.data.lockLockable.lockedRecord.locked')"
            echo "Locked $id: $lockSucceeded"
