@@ -16,4 +16,4 @@ We enable teams to iterate quickly and develop, preview, and ship delightful u
 
 ## Community Discussions
 
-The Vercel Community Discussions enables developers to ask questions to the community or make suggestions to the team. Before you jump in, let's make sure you're in the right place. Please [check out the welcome guide](https://github.com/vercel/community/discussions/2), [code of conduct](https://github.com/vercel/community/blob/main/.github/CODE_OF_CONDUCT.md) and consult our [support terms](https://vercel.com/legal/support-terms).
+The Vercel Community enables developers to ask questions to the community or make suggestions to the team. Before you jump in, let's make sure you're in the right place. Please [check out the welcome guide](https://vercel.community/t/getting-started-with-the-vercel-community/152), [code of conduct](https://vercel.community/guidelines) and consult our [support terms](https://vercel.com/legal/support-terms).
