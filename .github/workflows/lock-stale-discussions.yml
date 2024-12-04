@@ -1,5 +1,5 @@
 name: Auto Lock Stale Discussions
-# lock discussions that have not been updated in 30 days,
+ lock discussions that have not been updated in 30 days,
  starting with oldest, and running once per day
 
 on: 
