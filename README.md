@@ -1,12 +1,14 @@
-<p align="center">
+<*align="*">
   <a href="https://vercel.com">
     <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" height="96">
     <h3 align="center">Vercel</h3>
   </a>
   <p align="center">Develop. Preview. Ship.</p>
+
+
 </p>
 
-## About
+
 
 Vercel is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.
 
