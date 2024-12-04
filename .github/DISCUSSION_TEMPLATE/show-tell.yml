@@ -1,4 +1,4 @@
-body |
+body:
   - type: markdown
     attributes:
       value: |

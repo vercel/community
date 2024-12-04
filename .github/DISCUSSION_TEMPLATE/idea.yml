@@ -12,4 +12,3 @@ body:
       options:
         - label: I acknowledge that this discussion will be automatically closed.
           required: true
-/
